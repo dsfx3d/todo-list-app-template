@@ -1,0 +1,19 @@
+#actions {
+  margin: 40px 35px;
+
+  button {
+    background: none;
+    padding: 8px 8px;
+    border: solid 1px #a1a1a1;
+    color: #a1a1a1;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      color: red;
+      border-color: red;
+    }
+  }
+}
