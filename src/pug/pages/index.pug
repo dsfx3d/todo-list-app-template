@@ -1,17 +1,14 @@
-extends ../layouts/home.pug
+extends ../layouts/base.pug
+
+//- components
+include ../components/header
+include ../components/tasks
+include ../components/task-actions
 
 block vars
-  - var pageTitle = 'Home | gulp-pug-scss-boilerplate'
+  - var pageTitle = 'Todo-ist'
 
 block content
-  include ../components/_globals/logo
-  -
-    var logos = {
-      "Gulp": "images/gulp.svg",
-      "Sass": "images/sass.svg",
-      "Pug": "images/pug.svg",
-      "Browsersync": "images/browsersync.svg"
-    }
-
-  each logo, name in logos
-    +logo(logo, name)
+  +header()
+  +tasks()
+  +task-actions()

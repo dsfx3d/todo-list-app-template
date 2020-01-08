@@ -1,5 +1,31 @@
+* {
+  outline: none;
+}
+
 body {
   font-family: sans-serif;
   background-color: #f9f9f9;
-  padding-top: 50px;
+}
+
+.flex {
+  display: flex;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  background: white;
+}
+
+.base-input {
+  border: 0;
+  flex-grow: 1;
+  outline: none;
+  background: white;
 }

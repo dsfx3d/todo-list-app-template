@@ -7,7 +7,8 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title #{pageTitle}
 
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/flexboxgrid@6.3.1/dist/flexboxgrid.min.css")
     link(rel="stylesheet", href="css/main.css")
   body
-    include ../components/nav/navbar
     block body
+      block content
