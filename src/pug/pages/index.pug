@@ -1,0 +1,17 @@
+extends ../layouts/home.pug
+
+block vars
+  - var pageTitle = 'Home | gulp-pug-scss-boilerplate'
+
+block content
+  include ../components/_globals/logo
+  -
+    var logos = {
+      "Gulp": "images/gulp.svg",
+      "Sass": "images/sass.svg",
+      "Pug": "images/pug.svg",
+      "Browsersync": "images/browsersync.svg"
+    }
+
+  each logo, name in logos
+    +logo(logo, name)

@@ -1,0 +1,11 @@
+@import './imports/globals';
+
+// layouts
+@import './imports/layouts/home';
+
+// components
+@import './imports/components/_globals/logo';
+@import './imports/components/nav/navbar';
+
+// pages
+@import './imports/pages/about'

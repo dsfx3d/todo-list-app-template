@@ -1,0 +1,26 @@
+nav.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  li {
+    display: inline;
+
+    &:not(:last-child) {
+      &::after {
+        content: '|';
+        margin: 0 15px;
+      }
+    }
+
+    a {
+      color: #010101;
+      text-decoration: none;
+      transition: all ease-out 0.2s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
