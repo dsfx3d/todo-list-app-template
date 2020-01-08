@@ -1,13 +1,11 @@
-# gulp-pug-scss-boilerplate
-
-Scss &amp; Pug boilerplate using Gulp + BrowserSync
+# todo-list-app-template
 
 ## Usage
 
 - Clone this repository
 
 ```npm
-npx degit dsfx3d/gulp-pug-scss-boilerplate
+npx degit dsfx3d/todo-list-app-template
 ```
 
 - Install the dependencies
