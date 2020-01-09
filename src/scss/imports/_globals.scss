@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
 * {
   outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  font-family: sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -28,4 +31,10 @@ body {
   flex-grow: 1;
   outline: none;
   background: white;
+}
+
+.display {
+  font-family: 'Monoton', cursive;
+  font-size: 3.5rem;
+  margin: 20px 0 30px 0;
 }
