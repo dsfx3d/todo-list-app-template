@@ -1,9 +1,9 @@
 #create-bar-wrapper {
   transition: all ease-out 0.25s;
-  box-shadow: 0px 1px 5px 1px #f9f9f9;
+  box-shadow: 0px 2px 5px 1px #f1f1f1;
 
   &:hover {
-    box-shadow: 0px 1px 5px 1px #f1f1f1;
+    box-shadow: 0px 2px 5px 0.5px #e1e1e1;
   }
 
   #create-bar {
@@ -40,7 +40,9 @@
   ul {
     list-style: none;
     padding: 0;
-    margin-left: 18px;
+    margin: 20px 18px;
+    width: 100%;
+    display: flex;
 
     li {
       display: inline;

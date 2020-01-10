@@ -5,8 +5,8 @@ mixin create-bar()
     input(placeholder=attributes.placeholder)#create-bar.base-input
     button.icon +
   #create-bar-actions.row
-    .col-xs-12.col-lg-5.flex
-      ul
+    .col-xs-12.col-lg-5.flex.center-xs.start-md
+      ul.around-xs
         li: +radio('All')(name="filter", value="All")
         li: +radio('Active')(name="filter", value="Active")
         li: +radio('Completed')(name="filter", value='Completed')
