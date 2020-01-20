@@ -1,6 +1,7 @@
 # todo-list-app-template
 
 ## UI
+
 ![alt screenshot](https://image.prntscr.com/image/U8k3wdqdSpyWQMfwNu-m4Q.png)
 
 ## Usage
