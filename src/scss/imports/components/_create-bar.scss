@@ -40,12 +40,13 @@
   ul {
     list-style: none;
     padding: 0;
-    margin: 20px 18px;
+    margin: 20px 10px;
     width: 100%;
     display: flex;
 
     li {
       display: inline;
+      position: relative;
       margin: 0 5px;
       cursor: pointer;
 
@@ -58,24 +59,44 @@
           &:hover {
             opacity: 1;
           }
+
+          &::after {
+            content: '';
+            height: 1px;
+            width: 80%;
+            background-color: black;
+            position: absolute;
+            margin: 0;
+            left: 50%;
+            top: 110%;
+            transform: scaleX(1) translateX(-50%);
+          }
         }
       }
 
       span {
+        text-align: center;
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.4;
         transition: opacity 0.3s ease-out;
 
-        &:hover {
-          opacity: 0.9;
+        &::after {
+          content: '';
+          height: 1px;
+          width: 80%;
+          background-color: black;
+          position: absolute;
+          margin: 0;
+          left: 50%;
+          top: 110%;
+          transform: scaleX(0) translateX(-50%);
+          transition: all 0.2s ease-out;
         }
 
-        &::after {
-          content: '|';
-          font-weight: initial !important;
-          opacity: initial !important;
-          margin-left: 10px;
+        &:hover {
+          opacity: 0.75;
         }
+
         &:last-child::after {
           content: '';
         }
